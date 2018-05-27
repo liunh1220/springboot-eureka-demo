@@ -1,0 +1,13 @@
+spring.application.name表示应用名称，集群名称需要一致
+defaultZone表示向自身注册，例子中有三个server节点构成集群，其余两个两个节点也向该端口注册
+instanceId 表示eureka instance 标识，需要唯一，如果不配置，多个节点最终只会有一个生效
+
+同样的配置第二个节点,第三个节点
+
+启动所有服务端应用
+访问 http://localhost:7070 可以查看eureka注册服务信息
+
+访问 http://localhost:7070/eureka/apps 可以查看metadata
+
+
+

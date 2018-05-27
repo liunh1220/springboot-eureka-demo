@@ -1,0 +1,26 @@
+server:
+  port: 7070
+spring:
+  application:
+    name: server-01
+eureka:
+  instance:
+    hostname: localhost
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
+  server:enable-self-preservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:7070/eureka/
+
+
+
+
+      
+      
+      
+      
+      
