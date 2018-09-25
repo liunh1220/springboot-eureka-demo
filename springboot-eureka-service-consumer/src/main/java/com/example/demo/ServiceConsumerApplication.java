@@ -13,6 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableAsync;
 
+@EnableEurekaClient
 @EnableHystrixDashboard
 @SpringCloudApplication
 @Import({BaseConfiguration.class})

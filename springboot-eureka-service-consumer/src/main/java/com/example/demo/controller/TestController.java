@@ -2,10 +2,8 @@ package com.example.demo.controller;
 
 import com.example.demo.constant.Constants;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheKey;
-import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove;
-import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
